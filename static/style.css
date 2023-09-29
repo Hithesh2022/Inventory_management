@@ -1,0 +1,98 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ensure the background covers the entire viewport height */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    animation:  changeBackground  20s linear infinite; /* Apply the keyframes animation */
+}
+
+/* Navbar Styles */
+
+
+/* Container Styles */
+.container {
+    max-width: 600px;
+    margin: 0 auto; /* Set left and right margins to auto */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0.9;
+    margin-top: 200px;
+}
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.file-input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.convert-button, .compare-link {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-decoration: none;
+}
+
+.convert-button:hover, .compare-link:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+/* Footer Styles */
+/* style.css */
+
+
+@keyframes changeBackground {
+    0% {
+        background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fim1.dineout.co.in%2Fimages%2Fuploads%2Frestaurant%2Fsharpen%2F7%2Fb%2Fy%2Fp72622-15821138455e4d24352d73e.jpg%3Ftr%3Dtr%3An-xlarge&f=1&nofb=1&ipt=9eaaf73c159488c8ffebcf6f55d54be0ff8f8f9fcbbe20d86512f7fe29c5c428&ipo=images");
+        background-position: 0 0;
+    }
+    25% {
+        background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fim1.dineout.co.in%2Fimages%2Fuploads%2Frestaurant%2Fsharpen%2F7%2Fg%2Fy%2Fp72622-164326803961f247c7e551f.jpg%3Ftr%3Dtr%3An-xlarge&f=1&nofb=1&ipt=7ec9a3f3df060c22cd2e2b98cc743d2aa9befeba7d969a63e2a651915c64d8c3&ipo=images"); /* Change to the path of your second image */
+        background-position: 100% 0;
+    }
+    50% {
+        background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fb.zmtcdn.com%2Fdata%2Fpictures%2F7%2F19209267%2Fbf9873f91af81517bc80972f32ba651c.jpg&f=1&nofb=1&ipt=39dbf653c8ada36fc2b85c294d9df643d6680c220545b4f0100dedb58cce00b0&ipo=images"); /* Change to the path of your third image */
+        background-position: 100% 100%;
+    }
+    75% {
+        background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fim1.dineout.co.in%2Fimages%2Fuploads%2Frestaurant%2Fsharpen%2F7%2Fg%2Fs%2Fp72622-15821138515e4d243bb6b80.jpg%3Ftr%3Dtr%3An-xlarge&f=1&nofb=1&ipt=27bf09e6f99c4d9f1819230d4fe19b0be4b58500d4bf8eac18b9896f8684d243&ipo=images"); /* Change to the path of your fourth image */
+        background-position: 0 100%;
+    }
+    100% {
+        background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fb.zmtcdn.com%2Fdata%2Fpictures%2F7%2F19209267%2Fc3d8f1e900ee08ed6e739f73494ca0c2.jpg&f=1&nofb=1&ipt=5da6d2f26dac7654c8ecdc6d8e41ee054997a4fb5d092d000a225a1ab0e77dd0&ipo=images");
+        background-position: 0 0;
+    }
+}

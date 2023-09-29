@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF to Excel Conversion</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        
+    </div>
+    <div class="slideshow-container">
+        <div class="slideshow-image fade"></div>
+        <div class="slideshow-image fade"></div>
+        <!-- Add more "slideshow-image fade" divs for additional slides -->
+    </div>
+    <div class="container">
+        <h1>PDF to Excel Conversion</h1>
+        <form action="/process" method="POST" enctype="multipart/form-data" class="upload-form">
+            <label for="file-input" class="label">Select a PDF file:</label>
+            <input type="file" id="file-input" name="file" class="file-input">
+            <button type="submit" class="convert-button">Convert</button>
+        </form>
+        <a href="{{ url_for('upload') }}" class="compare-link">Compare Excel Sheets</a>
+    </div>
+    <div class="footer">
+       
+    </div>
+</body>
+</html>

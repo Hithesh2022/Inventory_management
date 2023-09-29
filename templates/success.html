@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversion Success</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='success.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversion Successful!</h1>
+        <p class="success-message">The Excel file has been generated and is ready for download.</p>
+        <a href="{{ url_for('download', filename=filename) }}" class="download-button">Download Excel File</a>
+    </div>
+</body>
+</html>

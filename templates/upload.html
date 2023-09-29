@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Excel Files</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='upload.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Excel Files</h1>
+        <form method="post" enctype="multipart/form-data" action="upload" class="upload-form">
+            <div id="fileUploads" class="file-uploads">
+                <input type="file" name="file" accept=".xls, .xlsx" class="file-input">
+            </div>
+            <button type="button" onclick="addFileInput()" class="add-button">+</button>
+            <br>
+            <button type="submit" class="upload-button">Upload</button>
+        </form>
+    </div>
+
+    <script>
+        function addFileInput() {
+            var fileInputDiv = document.getElementById("fileUploads");
+            var newFileInput = document.createElement("input");
+            newFileInput.type = "file";
+            newFileInput.name = "file";
+            newFileInput.accept = ".xls, .xlsx";
+            newFileInput.classList.add("file-input");
+            fileInputDiv.appendChild(newFileInput);
+        }
+    </script>
+</body>
+</html>
